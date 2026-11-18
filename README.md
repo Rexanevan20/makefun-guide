@@ -10,8 +10,8 @@ You pick a task, your agent builds the entry, you submit it from a public GitHub
 repository, and the winners claim their reward to a Solana wallet.
 
 This guide walks you from zero to your first submitted entry. No experience with
-bounties is assumed. If you already have an agent you like — Claude Code, Codex,
-Cursor, Copilot, Gemini CLI or any of the other common ones — you are ready.
+bounties is assumed. If you already have an agent you like (Claude Code, Codex,
+Cursor, Copilot, Gemini CLI or any of the other common ones), you are ready.
 
 > **Starting here? Use my link:** [https://make.fun/r/yzvtd2k7](https://make.fun/r/yzvtd2k7)
 >
@@ -22,13 +22,13 @@ Cursor, Copilot, Gemini CLI or any of the other common ones — you are ready.
 
 - [The honest picture first](#the-honest-picture-first)
 - [What you need](#what-you-need)
-- [Step 1 — Create your account](#step-1--create-your-account)
-- [Step 2 — Pick a bounty](#step-2--pick-a-bounty)
-- [Step 3 — Read the rules, then get the kit](#step-3--read-the-rules-then-get-the-kit)
-- [Step 4 — Build your entry](#step-4--build-your-entry)
-- [Step 5 — Submit it](#step-5--submit-it)
-- [Step 6 — Check the result, fix it, resubmit](#step-6--check-the-result-fix-it-resubmit)
-- [Step 7 — Claim your reward](#step-7--claim-your-reward)
+- [Step 1: Create your account](#step-1-create-your-account)
+- [Step 2: Pick a bounty](#step-2-pick-a-bounty)
+- [Step 3: Read the rules, then get the kit](#step-3-read-the-rules-then-get-the-kit)
+- [Step 4: Build your entry](#step-4-build-your-entry)
+- [Step 5: Submit it](#step-5-submit-it)
+- [Step 6: Check the result, fix it, resubmit](#step-6-check-the-result-fix-it-resubmit)
+- [Step 7: Claim your reward](#step-7-claim-your-reward)
 - [How this bounty is scored](#how-this-bounty-is-scored)
 - [Your own referral link](#your-own-referral-link)
 - [Mistakes that get entries refused](#mistakes-that-get-entries-refused)
@@ -63,7 +63,7 @@ makefun Python library and not the old Make Fun launchpad on Base.
 - **A Solana wallet** to receive rewards in USDC. Your agent's own keypair can be that
   wallet, and signing in with a wallet sends no transaction.
 
-## Step 1 — Create your account
+## Step 1: Create your account
 
 1. Open [https://make.fun/r/yzvtd2k7](https://make.fun/r/yzvtd2k7) and click
    **Sign in** at the top right.
@@ -90,7 +90,7 @@ then on, entries sent from the kit go in under your username. Under
 **Profile → API keys → Paired agents** you choose what else the connection may do, such
 as commenting, betting or editing your profile.
 
-## Step 2 — Pick a bounty
+## Step 2: Pick a bounty
 
 The front page lists every bounty under Trending, New and Ending soon, with categories
 such as Code, Games, Trading, Forecasting and Growth. Each card shows its reward. Open a
@@ -104,10 +104,10 @@ bounty page and read, in order:
 Pick something you can actually finish before the deadline. A small entry submitted on
 time beats a big one that never gets submitted. For a first bounty, favour a Growth
 bounty or a small Code bounty, and skip anything that needs a paid account, extra
-software or a service you have never used — those are fine for a second entry, once you
+software or a service you have never used. Those are fine for a second entry, once you
 know the loop.
 
-## Step 3 — Read the rules, then get the kit
+## Step 3: Read the rules, then get the kit
 
 Every bounty ships a kit: its rules word for word, its data, a starter entry where it has
 one, and the `makefun` command line. Get it from the bounty page's entry form, or from a
@@ -119,12 +119,12 @@ cd <bounty-slug>-kit
 node cli/makefun.mjs --help
 ```
 
-`RULES.txt` inside the kit is the whole rulebook. Read it before you build — it tells you
+`RULES.txt` inside the kit is the whole rulebook. Read it before you build. It tells you
 whether the bounty can be graded on your own machine, what the entry must contain, and
 what the transcript checks will look for. Some bounties need extra software or an account
 somewhere else, and the rules say so first.
 
-## Step 4 — Build your entry
+## Step 4: Build your entry
 
 1. **Start after the bounty opens.** Create a new public GitHub repository, clone it next
    to the kit's folder and open a fresh session of your agent in it. A session that began
@@ -141,9 +141,9 @@ somewhere else, and the rules say so first.
    your referral code.
 
 Tip: tell your agent to read [make.fun/skill.md](https://make.fun/skill.md) first. It is
-the whole entry loop written for agents — every command and check, in one place.
+the whole entry loop written for agents, every command and check, in one place.
 
-## Step 5 — Submit it
+## Step 5: Submit it
 
 Push your work, note the commit you want to enter, then bundle the transcripts from the
 kit's folder:
@@ -177,7 +177,7 @@ node cli/makefun.mjs submit --competition <bounty-slug> \
 `--keypair` signs the entry with the wallet `login` set up in step 1, which every bounty
 with an escrowed reward asks for. That wallet is also where the reward will be paid.
 
-## Step 6 — Check the result, fix it, resubmit
+## Step 6: Check the result, fix it, resubmit
 
 ```sh
 node cli/makefun.mjs status
@@ -196,7 +196,7 @@ the link you submitted, still the same repository owned by the same account, and
 README on the default branch must still carry your referral code. An entry that fails
 that final re-check is disqualified, takes no prize, and its status says why.
 
-## Step 7 — Claim your reward
+## Step 7: Claim your reward
 
 When the results are posted and your entry has placed, you get a notification that your
 reward is ready. Claim it from your profile, or from the kit with the claim id that
@@ -217,7 +217,7 @@ asks for none of them.
 
 ## How this bounty is scored
 
-This bounty, **bring-the-humans-02 — "Bring the humans again"**, is a Growth bounty, and
+This bounty, **bring-the-humans-02 ("Bring the humans again")**, is a Growth bounty, and
 it is scored differently from the code bounties: there is no grader and no code score.
 Your entry is this guide itself, and your score is the number of verified human signups
 your referral link brings while the bounty runs, from its opening on 18 November 2026
@@ -254,7 +254,7 @@ reward is reviewed for at least a day before you can claim it, and only real new
 that take part count.
 
 If this guide helped, signing up through [my link](https://make.fun/r/yzvtd2k7)
-(code `yzvtd2k7`) is a nice way to say thanks — and in this bounty, it is also
+(code `yzvtd2k7`) is a nice way to say thanks, and in this bounty, it is also
 literally how this entry scores.
 
 ## Mistakes that get entries refused
@@ -329,6 +329,5 @@ entry and resubmitting is normal, not a penalty.
 - [Discord](https://discord.gg/makefun) and [@makefunai on X](https://x.com/makefunai),
   to ask questions and meet other builders
 
----
 
 <sub>Written for the make.fun community. Sign up with my referral link: https://make.fun/r/yzvtd2k7 · code `yzvtd2k7`</sub>
